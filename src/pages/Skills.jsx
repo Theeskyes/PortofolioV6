@@ -34,24 +34,24 @@ const Skills = () => {
     { icon: <SiVite className="text-purple-500 text-8xl" />, name: "Vite" },
   ];
 
-  const services = [
+const services = [
     {
       icon: <CgWebsite className="text-stone-800 text-6xl mb-4" />,
-      title: "Static Website Development",
+      title: "Pengembangan Website Statis",
       description:
-        "Simple, fast-loading, and lightweight websites perfect for portfolios, landing pages, or business profiles.",
+        "Website yang sederhana, cepat dimuat, dan ringan — cocok untuk portofolio, landing page, atau profil bisnis.",
     },
     {
       icon: <RiPagesLine className="text-stone-800 text-6xl mb-4" />,
-      title: "Single-Page Applications",
+      title: "Single-Page Application",
       description:
-        "Modern, app-like web experiences built for speed and smooth navigation.",
+        "Pengalaman web modern yang dibangun untuk kecepatan dan navigasi yang lancar.",
     },
     {
       icon: <GrOptimize className="text-stone-800 text-6xl mb-4" />,
-      title: "Website Redesign & Optimization",
+      title: "Redesign & Optimasi Website",
       description:
-        "Revamping existing sites for better performance, visuals, and usability.",
+        "Memperbarui website yang sudah ada agar performa, visual, dan kegunaannya lebih baik.",
     },
   ];
 
@@ -130,7 +130,7 @@ const Skills = () => {
             className="text-3xl md:text-4xl text-stone-800 mb-6"
             style={{ fontFamily: "satoshi-black" }}
           >
-            What Can I Do
+            Apa Yang Bisa Saya Lakukan
           </motion.h2>
 
           <motion.p
@@ -142,9 +142,8 @@ const Skills = () => {
             className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base md:text-lg"
             style={{ fontFamily: "satoshi-medium" }}
           >
-            I create responsive, visually appealing, and user-friendly websites that
-            combine great design with smooth functionality, turning ideas into fast,
-            engaging digital products.
+            Saya membuat website yang responsif, menarik, dan ramah pengguna yang
+            menggabungkan desain yang luar biasa dengan fungsionalitas yang mulus, mengubah ide menjadi produk digital yang cepat dan menarik.
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
