@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import profileImg from '../assets/unnamed.jpg'
+import profileImg from '../assets/SESE1.jpeg'
 import { TypeAnimation } from 'react-type-animation'
 import { FaNetworkWired } from 'react-icons/fa'
 import { MdGroups } from 'react-icons/md'

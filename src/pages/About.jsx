@@ -1,5 +1,5 @@
 import React from "react";
-import myImg from '../assets/pfp.jpg';
+import myImg from '../assets/SESE2.jpeg';
 import { motion } from "framer-motion";
 
 const About = () => {
