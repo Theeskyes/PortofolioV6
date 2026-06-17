@@ -10,10 +10,10 @@ import {
   FaServer,
   FaUsers,
 } from "react-icons/fa";
-import { SiCiscosystems } from "react-icons/si";
+import { SiCisco } from "react-icons/si";
 import { TbRouter } from "react-icons/tb";
 import { MdOutlineArchery } from "react-icons/md";
-import { GiArchiveResearch } from "react-icons/gi";
+import { GiBowArrow } from "react-icons/gi";
 import { GrOptimize } from "react-icons/gr";
 import { motion } from "framer-motion";
 
@@ -25,7 +25,7 @@ const fadeUp = {
 const Skills = () => {
   const skills = [
     { icon: <FaNetworkWired className="text-rose-500 text-8xl" />, name: "Jaringan Komputer" },
-    { icon: <SiCiscosystems className="text-sky-500 text-8xl" />, name: "Cisco" },
+    { icon: <SiCisco className="text-sky-500 text-8xl" />, name: "Cisco" },
     { icon: <TbRouter className="text-orange-500 text-8xl" />, name: "Mikrotik" },
     { icon: <FaServer className="text-stone-700 text-8xl" />, name: "Server & Infrastruktur" },
     { icon: <FaUsers className="text-amber-500 text-8xl" />, name: "Organisasi" },
