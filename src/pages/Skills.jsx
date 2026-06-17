@@ -80,11 +80,11 @@ const services = [
           className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base md:text-lg"
           style={{ fontFamily: "satoshi-medium" }}
         >
-          I specialize in front-end web development, creating responsive and visually
-          engaging websites using HTML5, CSS3, Tailwind CSS, JavaScript, and React.
-          With Vite for fast builds and Git for version control, I deliver everything
-          from static sites to single-page applications focused on performance,
-          accessibility, and great user experience.
+          Saya mempelajari pengembangan web front-end, membuat website yang responsif
+        dan menarik secara visual menggunakan HTML5, CSS3, Tailwind CSS, JavaScript,
+        dan React. Dengan Vite untuk build yang cepat dan Git untuk version control,
+        saya bisa membangun mulai dari situs statis hingga single-page application
+        yang fokus pada performa, aksesibilitas, dan pengalaman pengguna yang baik.
         </motion.p>
 
         <Carousel
