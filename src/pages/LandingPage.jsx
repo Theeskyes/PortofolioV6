@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import profileImg from '../assets/unnamed.jpg'
 import { TypeAnimation } from 'react-type-animation'
-import { FaLaptopCode } from 'react-icons/fa'
-import { MdStyle } from 'react-icons/md'
-import { TbComponents } from 'react-icons/tb'
+import { FaNetworkWired } from 'react-icons/fa'
+import { MdGroups } from 'react-icons/md'
+import { TbArrowBigRightLines } from 'react-icons/tb'
 import { motion } from 'framer-motion'
 
 const LandingPage = () => {
@@ -21,15 +21,23 @@ const LandingPage = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl text-stone-800 mb-4" style={{fontFamily: 'satoshi-black'}}>
-            Hi, I’m Rachelle Pantinople
+            Hi, I'm Wanianse Indri Al-Imamah
           </h1>
 
           <p className="text-xl sm:text-2xl md:text-3xl text-stone-800 mb-6" style={{fontFamily: 'satoshi-medium'}}>
-            Aspiring
+            Seorang
             <span className="ml-2 block sm:inline">
               <TypeAnimation
                 sequence={[
-                  'Frontend Developer',
+                  'Pelajar TKJ Aktif',
+                  2000,
+                  '',
+                  1000,
+                  'Wakil Sekretaris OSIS',
+                  2000,
+                  '',
+                  1000,
+                  'Pemanah & Organisator',
                   2000,
                   '',
                   1000,
@@ -46,7 +54,7 @@ const LandingPage = () => {
             className="mt-4 text-lg text-stone-700 italic" 
             style={{ fontFamily: 'satoshi-medium' }}
           >
-            Your vision, my code.
+            Belajar, Berkarya, Berkembang.
           </p>
 
           <Link 
@@ -54,7 +62,7 @@ const LandingPage = () => {
             className="mt-6 inline-block text-rose-500 tracking-wide hover:underline underline-offset-4 decoration-2 transition-all"
             style={{ fontFamily: 'satoshi-bold' }}
           >
-            View my work →
+            Lihat Karyaku →
           </Link>
 
         </motion.div>
@@ -68,7 +76,7 @@ const LandingPage = () => {
         >
           <img
             src={profileImg}
-            alt="Rachelle Pantinople"
+            alt="Wanianse Indri Al-Imamah"
             className="w-80 h-auto object-cover drop-shadow-[15px_15px_0px_black] rounded-lg md:ml-8"
           />
         </motion.div>
@@ -84,20 +92,20 @@ const LandingPage = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl text-stone-800 mb-4" style={{fontFamily: 'satoshi-bold'}}>About Me</h2>
+          <h2 className="text-3xl sm:text-4xl text-stone-800 mb-4" style={{fontFamily: 'satoshi-bold'}}>Tentang Saya</h2>
           <p className="text-zinc-600 max-w-2xl mx-auto text-sm sm:text-base" style={{fontFamily: 'satoshi-medium'}}>
-            I’m an aspiring frontend developer passionate about creating clean, responsive, 
-            and visually appealing websites. I enjoy turning ideas into functional, 
-            interactive experiences using HTML, CSS, JavaScript, React, and Tailwind CSS.
+            Saya pelajar aktif di jurusan Teknik Komputer Jaringan (TKJ) yang juga menjabat sebagai 
+            Wakil Sekretaris OSIS. Saya memiliki minat di bidang teknologi jaringan komputer 
+            dan aktif dalam berbagai kegiatan ekstrakurikuler, termasuk panahan.
           </p>
         </motion.div>
 
         {/* Highlights */}
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[ 
-            { icon: <FaLaptopCode size={70} />, title: 'Clean & Semantic Code', desc: 'Writing well-structured, semantic HTML and React components for maintainable codebases.' },
-            { icon: <MdStyle size={70} />, title: 'Modern UI Styling', desc: 'Crafting visually appealing interfaces using Tailwind CSS and responsive design principles.' },
-            { icon: <TbComponents size={70} />, title: 'Interactive Components', desc: 'Building dynamic, user-friendly components with React and UI libraries.' }
+            { icon: <FaNetworkWired size={70} />, title: 'Network Engineering', desc: 'Mempelajari jaringan komputer, konfigurasi perangkat, dan infrastruktur TKJ.' },
+            { icon: <MdGroups size={70} />, title: 'Organisasi & Kepemimpinan', desc: 'Wakil Sekretaris OSIS — berpengalaman dalam koordinasi, administrasi, dan kerja tim.' },
+            { icon: <TbArrowBigRightLines size={70} />, title: 'Aktif & Berprestasi', desc: 'Aktif di ekstrakurikuler panahan dan selalu berusaha berkembang dalam setiap bidang.' }
           ].map((item, index) => (
             <motion.div
               key={index}
