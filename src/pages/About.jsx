@@ -16,7 +16,7 @@ const About = () => {
       >
         <img
           src={myImg}
-          alt="Rachelle Pantinople"
+          alt="Wanianse Indri Al-Imamah"
           className="w-90 md:w-94 h-90 md:h-94 object-cover border-7 border-stone-900 rounded-full shadow-lg"
         />
       </motion.div>
@@ -33,26 +33,25 @@ const About = () => {
           className="text-3xl md:text-4xl mb-4 text-stone-800"
           style={{ fontFamily: 'satoshi-black' }}
         >
-          About Me
+          Tentang Saya
         </h2>
         <p
           className="text-zinc-600 leading-relaxed mb-6"
           style={{ fontFamily: 'satoshi-medium' }}
         >
-          Hi! I'm <span className="font-semibold text-stone-800">Rachelle Pantinople</span>, 
-          an aspiring frontend developer passionate about crafting clean, 
-          user-friendly, and responsive web applications. I love transforming 
-          ideas into functional designs using HTML, CSS, JavaScript, React, 
-          and Tailwind CSS. My goal is to create experiences that are not only 
-          visually appealing but also intuitive to use.
+          Halo! Saya <span className="font-semibold text-stone-800">Wanianse Indri Al-Imamah</span>, 
+          seorang pelajar aktif di jurusan Teknik Komputer Jaringan (TKJ). Saat ini saya 
+          dipercaya sebagai Wakil Sekretaris OSIS, yang membantu saya belajar tentang 
+          kepemimpinan, kerja sama tim, serta kemampuan berorganisasi.
         </p>
         <p
           className="text-zinc-600 leading-relaxed mb-6"
           style={{ fontFamily: 'satoshi-medium' }}
         >
-          I’m continuously learning and exploring new tools and frameworks 
-          to improve my skills. Beyond coding, I enjoy listening to music 
-          and gaming — activities that inspire creativity and problem-solving.
+          Saya memiliki minat yang beragam, mulai dari teknologi jaringan komputer 
+          hingga ekstrakurikuler seperti panahan. Saya dikenal sebagai pribadi yang 
+          teliti, kreatif, dan memiliki rasa ingin tahu yang tinggi — selalu siap 
+          belajar dan berkembang dari setiap pengalaman.
         </p>
 
         {/* Highlights Section */}
@@ -67,9 +66,9 @@ const About = () => {
           viewport={{ once: true }}
         >
           {[
-            { title: "Frontend Dev", desc: "Skilled in React, Tailwind CSS, and modern UI principles." },
-            { title: "Responsive Design", desc: "Creating layouts that work on all devices." },
-            { title: "Creative Coding", desc: "Blending creativity with technical skills for unique solutions." }
+            { title: "Network Engineering", desc: "Mempelajari jaringan komputer dan konfigurasi perangkat di jurusan TKJ." },
+            { title: "Organisasi & Kepemimpinan", desc: "Wakil Sekretaris OSIS — berpengalaman dalam koordinasi dan kerja tim." },
+            { title: "Aktif & Berprestasi", desc: "Aktif di ekstrakurikuler panahan dan terus berkembang di berbagai bidang." }
           ].map((item, i) => (
             <motion.div
               key={i}
@@ -100,4 +99,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About; 
