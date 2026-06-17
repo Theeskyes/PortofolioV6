@@ -6,13 +6,15 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import {
-  FaNetworkWired,
-  FaServer,
-  FaUsers,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGitAlt,
 } from "react-icons/fa";
-import { SiCisco } from "react-icons/si";
-import { TbRouter } from "react-icons/tb";
-import { GiBowArrow } from "react-icons/gi";
+import { SiTailwindcss, SiVite } from "react-icons/si";
+import { CgWebsite } from "react-icons/cg";
+import { RiPagesLine } from "react-icons/ri";
 import { GrOptimize } from "react-icons/gr";
 import { motion } from "framer-motion";
 
@@ -23,32 +25,33 @@ const fadeUp = {
 
 const Skills = () => {
   const skills = [
-    { icon: <FaNetworkWired className="text-rose-500 text-8xl" />, name: "Jaringan Komputer" },
-    { icon: <SiCisco className="text-sky-500 text-8xl" />, name: "Cisco" },
-    { icon: <TbRouter className="text-orange-500 text-8xl" />, name: "Mikrotik" },
-    { icon: <FaServer className="text-stone-700 text-8xl" />, name: "Server & Infrastruktur" },
-    { icon: <FaUsers className="text-amber-500 text-8xl" />, name: "Organisasi" },
-    { icon: <GiBowArrow className="text-green-600 text-8xl" />, name: "Panahan" },
+    { icon: <FaHtml5 className="text-orange-500 text-8xl" />, name: "HTML" },
+    { icon: <FaCss3Alt className="text-blue-500 text-8xl" />, name: "CSS" },
+    { icon: <FaJs className="text-yellow-400 text-8xl" />, name: "JavaScript" },
+    { icon: <FaReact className="text-cyan-400 text-8xl" />, name: "React" },
+    { icon: <SiTailwindcss className="text-sky-400 text-8xl" />, name: "Tailwind CSS" },
+    { icon: <FaGitAlt className="text-orange-600 text-8xl" />, name: "Git" },
+    { icon: <SiVite className="text-purple-500 text-8xl" />, name: "Vite" },
   ];
 
   const services = [
     {
-      icon: <FaNetworkWired className="text-stone-800 text-6xl mb-4" />,
-      title: "Network Engineering",
+      icon: <CgWebsite className="text-stone-800 text-6xl mb-4" />,
+      title: "Static Website Development",
       description:
-        "Mempelajari konfigurasi jaringan komputer, perangkat Cisco dan Mikrotik di jurusan TKJ.",
+        "Simple, fast-loading, and lightweight websites perfect for portfolios, landing pages, or business profiles.",
     },
     {
-      icon: <GiArchiveResearch className="text-stone-800 text-6xl mb-4" />,
-      title: "Organisasi & Kepemimpinan",
+      icon: <RiPagesLine className="text-stone-800 text-6xl mb-4" />,
+      title: "Single-Page Applications",
       description:
-        "Wakil Sekretaris OSIS — terbiasa dengan koordinasi, administrasi, dan kerja sama tim.",
+        "Modern, app-like web experiences built for speed and smooth navigation.",
     },
     {
       icon: <GrOptimize className="text-stone-800 text-6xl mb-4" />,
-      title: "Pengembangan Diri",
+      title: "Website Redesign & Optimization",
       description:
-        "Aktif di ekstrakurikuler panahan dan selalu terbuka untuk belajar hal baru.",
+        "Revamping existing sites for better performance, visuals, and usability.",
     },
   ];
 
@@ -65,7 +68,7 @@ const Skills = () => {
           className="text-3xl md:text-4xl text-stone-800 mb-7"
           style={{ fontFamily: "satoshi-black" }}
         >
-          Keahlian & Minat
+          My Tech Stack
         </motion.h2>
 
         <motion.p
@@ -77,10 +80,11 @@ const Skills = () => {
           className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base md:text-lg"
           style={{ fontFamily: "satoshi-medium" }}
         >
-          Saya fokus mempelajari jaringan komputer di jurusan TKJ, sambil aktif
-          berorganisasi sebagai Wakil Sekretaris OSIS dan menekuni ekstrakurikuler
-          panahan. Saya percaya setiap pengalaman adalah kesempatan untuk belajar
-          dan berkembang.
+          I specialize in front-end web development, creating responsive and visually
+          engaging websites using HTML5, CSS3, Tailwind CSS, JavaScript, and React.
+          With Vite for fast builds and Git for version control, I deliver everything
+          from static sites to single-page applications focused on performance,
+          accessibility, and great user experience.
         </motion.p>
 
         <Carousel
@@ -126,7 +130,7 @@ const Skills = () => {
             className="text-3xl md:text-4xl text-stone-800 mb-6"
             style={{ fontFamily: "satoshi-black" }}
           >
-            Apa Yang Bisa Saya Lakukan
+            What Can I Do
           </motion.h2>
 
           <motion.p
@@ -138,8 +142,9 @@ const Skills = () => {
             className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base md:text-lg"
             style={{ fontFamily: "satoshi-medium" }}
           >
-            Memadukan kemampuan teknis di bidang jaringan komputer dengan soft skill
-            organisasi dan kepemimpinan dari pengalaman OSIS.
+            I create responsive, visually appealing, and user-friendly websites that
+            combine great design with smooth functionality, turning ideas into fast,
+            engaging digital products.
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
