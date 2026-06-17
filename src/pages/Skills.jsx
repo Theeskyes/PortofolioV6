@@ -12,7 +12,6 @@ import {
 } from "react-icons/fa";
 import { SiCisco } from "react-icons/si";
 import { TbRouter } from "react-icons/tb";
-import { MdOutlineArchery } from "react-icons/md";
 import { GiBowArrow } from "react-icons/gi";
 import { GrOptimize } from "react-icons/gr";
 import { motion } from "framer-motion";
@@ -29,7 +28,7 @@ const Skills = () => {
     { icon: <TbRouter className="text-orange-500 text-8xl" />, name: "Mikrotik" },
     { icon: <FaServer className="text-stone-700 text-8xl" />, name: "Server & Infrastruktur" },
     { icon: <FaUsers className="text-amber-500 text-8xl" />, name: "Organisasi" },
-    { icon: <MdOutlineArchery className="text-green-600 text-8xl" />, name: "Panahan" },
+    { icon: <GiBowArrow className="text-green-600 text-8xl" />, name: "Panahan" },
   ];
 
   const services = [
