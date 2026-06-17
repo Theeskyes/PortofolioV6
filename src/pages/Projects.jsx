@@ -1,98 +1,16 @@
 import React from "react";
-import rapidImg from "../assets/rapid.png"
-import molaveImg from "../assets/molave.png"
-import flowerShopImg from "../assets/flowershop.png";
-import ecBookstoreImg from "../assets/ecbookstore.jpg";
-import clothingImg from "../assets/clothing.png";
-import school1Img from "../assets/school1.png";
-import school2Img from "../assets/school2.png";
-import intraImg from "../assets/intra.png";
-import scienceImg from "../assets/science.png";
-import biniImg from "../assets/bini.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Molave Street Barbers (Capstone Project)",
+      title: "Peluang Dasar (Projek Matematika)",
       description:
-        "A modern, responsive website built as a capstone project for Molave Street Barbers. The site features a clean design, service showcases, and intuitive navigation—focused on delivering a polished user experience across desktop and mobile devices.",
-      image: molaveImg,
-      link: "https://molavestreetbarbers.vercel.app/",
-      tech: ["React+Vite", "JavaScript", "Tailwind CSS", "HTML", "Supabase"],
-    },
-
-    {
-      title: "Rapid Solutions Website (Commission)",
-      description:
-        "A professional and fully responsive corporate website developed for Rapido Solutions. Designed to clearly present the company’s services, brand identity, and contact information with a clean layout and smooth user experience across all devices.",
-      image: rapidImg,
-      link: "https://rapidosolutions.tech/",
-      tech: ["HTML", "Tailwind CSS", "JavaScript", "React+Vite", "Supabase"],
-    },
-    {
-      title: "Flower Shop Website",
-      description:
-        "The Flower Shop is a static website designed to showcase a variety of flowers available for purchase. This website provides users with an easy-to-navigate interface to explore different flower types, view details, and make inquiries.",
-      image: flowerShopImg,
-      link: "https://rchll-16.github.io/Flower-Shop/",
-      tech: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      title: "E-Commerce Web App",
-      description:
-        "An E-Commerce bookstore web application where users can browse, search, and purchase books online.  Built with React, Node.js, and MongoDB — providing a smooth, and dynamic shopping experience.",
-      image: ecBookstoreImg,
-      link: "https://github.com/rchll-16/e-commerce",
-      tech: ["JavaScript", "React", "NodeJS", "MongoDB"],
-    },
-    {
-      title: "Clothing Website (Commision)",
-      description:
-        "A clean, responsive, and user-friendly clothing site built with HTML and CSS. This static web project showcases a landing page, FAQ section, and styling using custom CSS.",
-      image: clothingImg,
-      link: "https://rchll-16.github.io/clothingwebsite/main.html",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "School Website 1 (Commision)",
-      description:
-        "A clean, informative, and fully responsive school website crafted with HTML and CSS. Featuring multiple pages—Home, About, Academic Programs, Offers, Contacts—this static site is perfect for informational or portfolio use.",
-      image: school1Img,
-      link: "https://rchll-16.github.io/school-aaa/",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "School Website 2 (Commision)",
-      description:
-        "A clean, responsive, and informative school website built using HTML and CSS. Ideal for institutional presentation, this static site includes pages for home, about, academic programs, events, and contact details.",
-      image: school2Img,
-      link: "https://rchll-16.github.io/school-uep/",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "Intramuros Cultural Website (Commision)",
-      description:
-        "A beautifully designed, static website showcasing the heritage sites of Intramuros using HTML, CSS, and high-quality images. Perfect for both educational presentation and visual storytelling of historical landmarks.",
-      image: intraImg,
-      link: "https://rchll-16.github.io/intramuros-website/",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "Science Lesson Website (Commision)",
-      description:
-        "A clean, educational website designed to present various science topics using HTML and CSS. Perfect for sharing lesson modules such as the water cycle, biodiversity, pollution, and more in a readable, structured format.",
-      image: scienceImg,
-      link: "https://rchll-16.github.io/science-lesson/main.html",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "Bini Redesign",
-      description:
-        "A clean, modern redesign project for BINI, focusing on visually appealing layout, responsive design, and smooth user experience. Built entirely with HTML, CSS, and JavaScript — no frameworks, just handcrafted code.",
-      image: biniImg,
-      link: "https://rchll-16.github.io/bini-redesign/main.html",
-      tech: ["HTML", "CSS", "JavaScript"],
+        "Projek mata pelajaran Matematika kelas XI TKJ 2 yang membahas materi peluang dasar (probabilitas), disusun dan dipresentasikan dalam bentuk video pembelajaran.",
+      image: "https://img.youtube.com/vi/Dxe75kUxnCo/hqdefault.jpg",
+      link: "https://youtu.be/Dxe75kUxnCo?si=pRrG70QvJVFiYMKD",
+      tech: ["Matematika", "Peluang", "Presentasi"],
+      linkLabel: "Watch Video",
     },
   ];
 
@@ -106,7 +24,7 @@ const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          My Projects
+          Projek Saya
         </motion.h2>
 
         <motion.p
@@ -116,8 +34,8 @@ const Projects = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Here are some of the projects I've worked on, showcasing my skills in
-          creating functional, visually appealing, and user-friendly websites.
+          Berikut beberapa projek sekolah yang pernah saya kerjakan, menunjukkan
+          proses belajar saya dalam berbagai mata pelajaran dan kegiatan.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -159,6 +77,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+                
                 <a
                   href={project.link}
                   target="_blank"
@@ -166,7 +85,7 @@ const Projects = () => {
                   className="inline-block bg-rose-300 border border-stone-800 text-stone-800 px-4 py-2 rounded-sm text-sm font-semibold hover:bg-rose-400 transition-colors"
                   style={{ fontFamily: "satoshi-medium" }}
                 >
-                  Live Site
+                  {project.linkLabel || "Live Site"}
                 </a>
               </div>
             </motion.div>
